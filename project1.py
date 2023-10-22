@@ -40,6 +40,6 @@ page_number = st.number_input("Enter page number:", min_value=1, max_value=len(d
 start_idx = (page_number - 1) * 100
 end_idx = page_number * 100
 st.write(f"Displaying rows {start_idx+1} to {min(end_idx, len(df))} of {len(df)}")
-for idx, row in df.iterrows():
-    detail_page_url = f"streamlit run detail_page.py?id={idx}"
-    st.markdown(f"[Details for {row['name']}](<{detail_page_url}>)", unsafe_allow_html=True)
+#for idx, row in df.iterrows():
+ #   detail_page_url = f"streamlit run detail_page.py?id={idx}"
+  #  st.markdown(f"[Details for {row['name']}](<{detail_page_url}>)", unsafe_allow_html=True)
